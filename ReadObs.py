@@ -25,6 +25,18 @@ class ReadObs:
                         strinterval=strline[0:60].strip()
                         self.station_data.interval=eval(strinterval)
                         strline=f.readline().rstrip('\n')
+                    elif strline[60:]=="MARKER NAME":#点号
+                        strmarker=strline[0:60].strip()
+                        self.station_data.markername=strmarker
+                        strline=f.readline().rstrip('\n')
+                    elif strline[60:]=="REC # / TYPE / VERS":#接收机类型
+                        strrec=strline[0:20].strip()+"-"+strline[20:40].strip()
+                        self.station_data.rctype=strrec
+                        strline=f.readline().rstrip('\n')
+                    elif strline[60:]=="ANT # / TYPE":#天线
+                        strant=strline[20:40].strip()
+                        self.station_data.antype=strant
+                        strline=f.readline().rstrip('\n')
                     elif strline[60:]=="# / TYPES OF OBSERV":#观测值类型
                         strtype=strline[0:60].split()
                         typenumber=eval(strtype[0])
@@ -39,10 +51,14 @@ class ReadObs:
                                 self.station_data.setL1(True)
                             if strtype[i]=="L2":
                                 self.station_data.setL2(True)
+                            if strtype[i]=="L5":
+                                self.station_data.setL5(True)
                             if strtype[i]=="C1":
                                 self.station_data.setC1(True)
                             if strtype[i]=="C2":
                                 self.station_data.setC2(True)
+                            if strtype[i]=="C5":
+                                self.station_data.setC5(True)
                             if strtype[i]=="P1":
                                 self.station_data.setP1(True)
                             if strtype[i]=="P2":
@@ -51,6 +67,14 @@ class ReadObs:
                                 self.station_data.setS1(True)
                             if strtype[i]=="S2":
                                 self.station_data.setS2(True)
+                            if strtype[i]=="S5":
+                                self.station_data.setS5(True)
+                            if strtype[i]=="D1":
+                                self.station_data.setD1(True)
+                            if strtype[i]=="D2":
+                                self.station_data.setD2(True)
+                            if strtype[i]=="D5":
+                                self.station_data.setD5(True)
                         strline=f.readline().rstrip('\n')
                     elif strline[60:]=="END OF HEADER":#头文件结束标识符
                         break
@@ -75,7 +99,7 @@ class ReadObs:
                         second=eval(strline[16:18])
                         #将时间的书写格式调整规范
                         strtime="20"+str(year)+" "+str(mouth)+" "+str(day)+" "+str(hour)+" "+str(minute)+" "+str(second)
-                        print(strtime)
+                        #print(strtime)
                         #该历元下的卫星数
                         sv_sum=eval(strline[30:32])
                         #print(sv_sum)
@@ -121,10 +145,14 @@ class ReadObs:
                                     obsepoch.setL1(value)
                                 if typename=="L2":
                                     obsepoch.setL2(value)
+                                if typename=="L5":
+                                    obsepoch.setL5(value)
                                 if typename=="C1":
                                     obsepoch.setC1(value)
                                 if typename=="C2":
                                     obsepoch.setC2(value)
+                                if typename=="C5":
+                                    obsepoch.setC5(value)
                                 if typename=="P1":
                                     obsepoch.setP1(value)
                                 if typename=="P2":
@@ -133,6 +161,14 @@ class ReadObs:
                                     obsepoch.setS1(value)
                                 if typename=="S2":
                                     obsepoch.setS2(value)
+                                if typename=="S5":
+                                    obsepoch.setS5(value)
+                                if typename=="D1":
+                                    obsepoch.setD1(value)
+                                if typename=="D2":
+                                    obsepoch.setD2(value)
+                                if typename=="D5":
+                                    obsepoch.setD5(value)
                             self.obsepochs.append(obsepoch)
                         strline=f.readline().rstrip('\n')
                     else:
@@ -144,9 +180,12 @@ class ReadObs:
         return self.station_data
     def get_obsepochs(self):
         return self.obsepochs
-#c=ReadObs("aber0010.19o")
-#print(c.get_station_data().getX_Pos())
-#print("cccc")
+'''c=ReadObs("abmf0010.19o")
+print(c.get_station_data().get_rctype())
+pp=c.get_obsepochs()
+print(len(pp))
+print("cccc")'''
+
 
 
 

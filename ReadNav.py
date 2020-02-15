@@ -224,10 +224,22 @@ class ReadNav:
                         nav_data.ZDOT=eval(strline[22:41].replace('D','e'))
                         nav_data.Z_acceleration=eval(strline[41:60].replace('D','e'))
                         nav_data.age=eval(strline[60:].replace('D','e'))
-                    print(nav_data.get_time(),nav_data.get_sv_prn(),nav_data.get_sv_clock_bias(),nav_data.get_age())
+                        print(nav_data.get_time(),nav_data.get_sv_prn(),nav_data.get_sv_clock_bias(),nav_data.get_age())
                     self.Nav_data_list.append(nav_data)
                     strline=f.readline().rstrip('\n')
                 else:#否
                     strline=f.readline().rstrip('\n')
-p=ReadNav("abmf0010.19g")
-print()
+    def get_Nav_data_list(self):
+        return self.Nav_data_list
+    def get_sv_system(self):
+        return self.sv_system
+'''p=ReadNav("abmf0010.19n")
+q=GLONASS_Nav_Data
+print(p.get_sv_system())
+print(p.get_sv_system())
+l=p.get_Nav_data_list()
+for i in range(len(l)):
+    if l[i].get_sv_prn()=="G04":
+        print("cunzai")
+    else :
+        print("bucunzai")'''

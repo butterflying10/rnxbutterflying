@@ -1,0 +1,181 @@
+
+
+
+
+
+ G       | L1           | 1575.42     | C/A                            | C1C:C1:CA    | L1C:L1:LA     | D1C:D1:DA  | S1C:S1:SA
+ G       | L1           | 1575.42     | L1C (D)                        | C1S:C1:CB    | L1S:L1:LB     | D1S:D1:DB  | S1S:S1:SB
+ G       | L1           | 1575.42     | L1C (P)                        | C1L:C1:CB    | L1L:L1:LB     | D1L:D1:DB  | S1L:S1:SB
+ G       | L1           | 1575.42     | L1C (D+L)                      | C1X:C1:CB    | L1X:L1:LB     | D1X:D1:DB  | S1X:S1:SB
+ G       | L1           | 1575.42     | P (AS off)                     | C1P:P1:      | L1P:L1:       | D1P:D1:    | S1P:S1:
+ G       | L1           | 1575.42     | Z-tracking and similar (AS on) | C1W:P1:      | L1W:L1:       | D1W:D1:    | S1W:S1:
+ G       | L1           | 1575.42     | Y                              | C1Y:P1:      | L1Y:L1:       | D1Y:D1:    | S1Y:S1:
+ G       | L1           | 1575.42     | M                              | C1M:C1:__    | L1M:L1:       | D1M:D1:    | S1M:S1:
+ G       | L1           | 1575.42     | codeless                       | C1N:C1:__    | L1N:L1:       | D1N:D1:    | S1N:S1:
+ G       | L1           | 1575.42     | unknown/RX2                    | P1_:P1:__    | L1_:L1:LA     | D1_:D1:DA  | S1_:S1:
+ G       | L1           | 1575.42     | unknown/RX2                    | C1_:C1:CA    | LA_:L1:LA     | DA_:D1:DA  | SA_:S1:SA
+ G       | L1           | 1575.42     | unknown/RX2                    | CA_:C1:CA    | LB_:L1:LB     | DB_:D1:DB  | SB_:S1:SB
+ G       | L1           | 1575.42     | unknown/RX2                    | CB_:C1:CB    | ___:__:__     | ___:__:__  | ___:__:__
+
+ G       | L2           | 1227.60     | C/A                            | C2C:C2:      | L2C:L2:       | D2C:D2:    | S2C:S2:
+ G       | L2           | 1227.60     | L1(C/A)+(P2-P1)(semi-codeless) | C2D:C2:      | L2D:L2:       | D2D:D2:    | S2D:S2:
+ G       | L2           | 1227.60     | L2C (M)                        | C2S:C2:CC    | L2S:L2:LC     | D2S:D2:DC  | S2S:S2:SC
+ G       | L2           | 1227.60     | L2C (L)                        | C2L:C2:CC    | L2L:L2:LC     | D2L:D2:DC  | S2L:S2:SC
+ G       | L2           | 1227.60     | L2C (M+L)                      | C2X:C2:CC    | L2X:L2:LC     | D2X:D2:DC  | S2X:S2:SC
+ G       | L2           | 1227.60     | P                              | C2P:P2:      | L2P:L2:       | D2P:D2:    | S2P:S2:
+ G       | L2           | 1227.60     | Z-tracking and similar (AS on) | C2W:P2:      | L2W:L2:       | D2W:D2:    | S2W:S2:
+ G       | L2           | 1227.60     | Y                              | C2Y:P2:      | L2Y:L2:       | D2Y:D2:    | S2Y:S2:
+ G       | L2           | 1227.60     | M                              | C2M:C2:__    | L2M:L2:       | D2M:D2:    | S2M:S2:
+ G       | L2           | 1227.60     | codeless                       | C2N:C2:__    | L2N:L2:       | D2N:D2:    | S2N:S2:
+ G       | L2           | 1577.60     | unknown/RX2                    | P2_:P2:__    | L2_:L2:       | D2_:D2:    | S2_:S2:
+ G       | L2           | 1577.60     | unknown/RX2                    | C2_:C2:__    | LC_:L2:LC     | DC_:D2:DC  | SC_:S2:SC
+
+ G       | L5           | 1176.45     | I                              | C5I:C5:      | L5I:L5:       | D5I:D5:    | S5I:S5:
+ G       | L5           | 1176.45     | Q                              | C5Q:C5:      | L5Q:L5:       | D5Q:D5:    | S5Q:S5:
+ G       | L5           | 1176.45     | I+Q                            | C5X:C5:      | L5X:L5:       | D5X:D5:    | S5X:S5:
+ G       | L5           | 1176.45     | unknown/RX2                    | C5_:C5:      | L5_:L5:       | D5_:D5:    | S5_:S5:
+
+
+ R       | G1           | 1602+k*9/16 | C/A                            | C1C:C1:CA    | L1C:L1:LA     | D1C:D1:DA  | S1C:S1:SA
+ R       | G1           | 1602+k*9/16 | P                              | C1P:P1:      | L1P:L1:       | D1P:D1:    | S1P:S1:
+ R       | G1           | 1602+k*9/16 | unknown/RX2                    | P1_:P1:__    | L1_:L1:LA     | D1_:D1:DA  | S1_:S1:SA
+ R       | G1           | 1602+k*9/16 | unknown/RX2                    | C1_:C1:CA    | LA_:L1:LA     | DA_:D1:DA  | SA_:S1:SA
+ R       | G1           | 1602+k*9/16 | unknown/RX2                    | CA_:C1:CA    | ___:__:__     | ___:__:__  | ___:__:__
+
+ R       | G1a          | 1600.995    | L1OCd                          | C4A:C4:      | L4A:L4:       | D4A:D4:    | S4A:S4:
+ R       | G1a          | 1600.995    | L1OCp                          | C4B:C4:      | L4B:L4:       | D4B:D4:    | S4B:S4:
+ R       | G1a          | 1600.995    | L1OCd+L1OCp                    | C4X:C4:      | L4X:L4:       | D4X:D4:    | S4X:S4:
+ R       | G1a          | 1600.995    | unknown/RX2                    | C4_:C4:      | L4_:L4:       | D4_:D4:    | S4_:S4:
+
+ R       | G2           | 1246+k*7/16 | C/A (GLONASS M)                | C2C:C2:CD    | L2C:L2:LD     | D2C:D2:DD  | S2C:S2:SD
+ R       | G2           | 1246+k*7/16 | P                              | C2P:P2:      | L2P:L2:       | D2P:D2:    | S2P:S2:
+ R       | G2           | 1602+k*9/16 | unknown/RX2                    | P2_:P2:__    | L2_:L2:LD     | D2_:D2:DD  | S2_:S2:SD
+ R       | G2           | 1602+k*9/16 | unknown/RX2                    | C2_:C2:__    | LD_:L2:LD     | DD_:D2:DD  | SD_:S2:SD
+ R       | G2           | 1602+k*9/16 | unknown/RX2                    | CD_:C2:CD    | ___:__:__     | ___:__:__  | ___:__:__
+
+ R       | G2a          | 1248.06     | L2OCSI                         | C6A:C6:      | L6A:L6:       | D6A:D6:    | S6A:S6:
+ R       | G2a          | 1248.06     | L2OCp                          | C6B:C6:      | L6B:L6:       | D6B:D6:    | S6B:S6:
+ R       | G2a          | 1248.06     | L2OCSI+L2OCp                   | C6X:C6:      | L6X:L6:       | D6X:D6:    | S6X:S6:
+ R       | G2a          | 1248.06     | unknown/RX2                    | C6_:C6:      | L6_:L6:       | D6_:D6:    | S6_:S6:
+
+ R       | G3           | 1202.025    | I                              | C3I:C3:      | L3I:L3:       | D3I:D3:    | S3I:S3:
+ R       | G3           | 1202.025    | Q                              | C3Q:C3:      | L3Q:L3:       | D3Q:D3:    | S3Q:S3:
+ R       | G3           | 1202.025    | I+Q                            | C3X:C3:      | L3X:L3:       | D3X:D3:    | S3X:S3:
+ R       | G3           | 1202.025    | unknown/RX2                    | C3_:C3:      | L3_:L3:       | D3_:D3:    | S3_:S3:
+
+
+ E       | E1           | 1575.42     | A PRS                          | C1A:C1:      | L1A:L1:       | D1A:D1:    | S1A:S1:
+ E       | E1           | 1575.42     | B I/NAV OS/CS/SoL              | C1B:C1:      | L1B:L1:       | D1B:D1:    | S1B:S1:
+ E       | E1           | 1575.42     | C no data                      | C1C:C1:      | L1C:L1:       | D1C:D1:    | S1C:S1:
+ E       | E1           | 1575.42     | B+C                            | C1X:C1:      | L1X:L1:       | D1X:D1:    | S1X:S1:
+ E       | E1           | 1575.42     | A+B+C                          | C1Z:C1:      | L1Z:L1:       | D1Z:D1:    | S1Z:S1:
+ E       | E1           | 1575.42     | unknown/RX2                    | C1_:C1:      | L1_:L1:       | D1_:D1:    | S1_:S1:
+
+ E       | E5a          | 1176.45     | I F/NAV OS                     | C5I:C5:      | L5I:L5:       | D5I:D5:    | S5I:S5:
+ E       | E5a          | 1176.45     | Q no data                      | C5Q:C5:      | L5Q:L5:       | D5Q:D5:    | S5Q:S5:
+ E       | E5a          | 1176.45     | I+Q                            | C5X:C5:      | L5X:L5:       | D5X:D5:    | S5X:S5:
+ E       | E5a          | 1176.45     | unknown/RX2                    | C5_:C5:      | L5_:L5:       | D5_:D5:    | S5_:S5:
+
+ E       | E5b          | 1207.140    | I I/NAV OS/CS/SoL              | C7I:C7:      | L7I:L7:       | D7I:D7:    | S7I:S7:
+ E       | E5b          | 1207.140    | Q no data                      | C7Q:C7:      | L7Q:L7:       | D7Q:D7:    | S7Q:S7:
+ E       | E5b          | 1207.140    | I+Q                            | C7X:C7:      | L7X:L7:       | D7X:D7:    | S7X:S7:
+ E       | E5b          | 1207.140    | unknown/RX2                    | C7_:C7:      | L7_:L7:       | D7_:D7:    | S7_:S7:
+
+ E       | E5 (E5a+E5b) | 1191.795    | I                              | C8I:C8:      | L8I:L8:       | D8I:D8:    | S8I:S8:
+ E       | E5 (E5a+E5b) | 1191.795    | Q                              | C8Q:C8:      | L8Q:L8:       | D8Q:D8:    | S8Q:S8:
+ E       | E5 (E5a+E5b) | 1191.795    | I+Q                            | C8X:C8:      | L8X:L8:       | D8X:D8:    | S8X:S8:
+ E       | E5 (E5a+E5b) | 1191.795    | unknown/RX2                    | C8_:C8:      | L8_:L8:       | D8_:D8:    | S8_:S8:
+
+ E       | E6           | 1278.75     | A PRS                          | C6A:C6:      | L6A:L6:       | D6A:D6:    | S6A:S6:
+ E       | E6           | 1278.75     | B C/NAV CS                     | C6B:C6:      | L6B:L6:       | D6B:D6:    | S6B:S6:
+ E       | E6           | 1278.75     | C no data                      | C6C:C6:      | L6C:L6:       | D6C:D6:    | S6C:S6:
+ E       | E6           | 1278.75     | B+C                            | C6X:C6:      | L6X:L6:       | D6X:D6:    | S6X:S6:
+ E       | E6           | 1278.75     | A+B+C                          | C6Z:C6:      | L6Z:L6:       | D6Z:D6:    | S6Z:S6:
+ E       | E6           | 1278.75     | unknown/RX2                    | C6_:C6:      | L6_:L6:       | D6_:D6:    | S6_:S6:
+
+
+ S       | L1           | 1575.42     | C/A                            | C1C:C1:      | L1C:L1:       | D1C:D1:    | S1C:S1:
+ S       | L1           | 1575.42     | unknown/RX2                    | C1_:C1:      | L1_:L1:       | D1_:D1:    | S1_:S1:
+
+ S       | L5           | 1176.45     | I                              | C5I:C5:      | L5I:L5:       | D5I:D5:    | S5I:S5:
+ S       | L5           | 1176.45     | Q                              | C5Q:C5:      | L5Q:L5:       | D5Q:D5:    | S5Q:S5:
+ S       | L5           | 1176.45     | I+Q                            | C5X:C5:      | L5X:L5:       | D5X:D5:    | S5X:S5:
+ S       | L5           | 1176.45     | unknown/RX2                    | C5_:C5:      | L5_:L5:       | D5_:D5:    | S5_:S5:
+
+
+ C       |              | 1589.74     | ___                            | ___:__       | ___:__:__     | ___:__:__  | ___:__:__
+
+ C       | B1           | 1575.42     | Data                           | C1D:C1       | L1D:L1:       | D1D:D1:    | S1D:S1:
+ C       | B1           | 1575.42     | Pilot                          | C1P:C1       | L1P:L1:       | D1P:D1:    | S1P:S1:
+ C       | B1           | 1575.42     | Data+Pilot                     | C1X:C1       | L1X:L1:       | D1X:D1:    | S1X:S1:
+ C       | B1           | 1575.42     | B1A                            | C1A:C1       | L1A:L1:       | D1A:D1:    | S1A:S1:
+ C       | B1           | 1575.42     | Codeless                       | ___:__       | L1N:L1:       | D1N:D1:    | S1N:S1:
+
+ C       | B1-2         | 1561.098    | I                              | C2I:C2:      | L2I:L2:       | D2I:D2:    | S2I:S2:
+ C       | B1-2         | 1561.098    | Q                              | C2Q:C2:      | L2Q:L2:       | D2Q:D2:    | S2Q:S2:
+ C       | B1-2         | 1561.098    | I+Q                            | C2X:C2:      | L2X:L2:       | D2X:D2:    | S2X:S2:
+ C       | B1-2         | 1561.098    | unknown/RX2                    | C2_:C2:      | L2_:L2:       | D2_:D2:    | S2_:S2:
+
+ C       | B2a          | 1176.45     | Data                           | C5D:C5:      | L5D:L5:       | D5D:D5:    | S5D:S5:
+ C       | B2a          | 1176.45     | Pilot                          | C5P:C5:      | L5P:L5:       | D5P:D5:    | S5P:S5:
+ C       | B2a          | 1176.45     | Data+Pilot                     | C5X:C5:      | L5X:L5:       | D5X:D5:    | S5X:S5:
+
+ C       | B2b          | 1207.14     | I                              | C7I:C7:      | L7I:L7:       | D7I:D7:    | S7I:S7:
+ C       | B2b          | 1207.14     | Q                              | C7Q:C7:      | L7Q:L7:       | D7Q:D7:    | S7Q:S7:
+ C       | B2b          | 1207.14     | I+Q                            | C7X:C7:      | L7X:L7:       | D7X:D7:    | S7X:S7:
+ C       | B2b          | 1207.14     | Data                           | C7D:C7:      | L7D:L7:       | D7D:D7:    | S7D:S7:
+ C       | B2b          | 1207.14     | Pilot                          | C7P:C7:      | L7P:L7:       | D7P:D7:    | S7P:S7:
+ C       | B2b          | 1207.14     | Data+Pilot                     | C7Z:C7:      | L7Z:L7:       | D7Z:D7:    | S7Z:S7:
+ C       | B2b          | 1207.14     | unknown/RX2                    | C7_:C7:      | L7_:L7:       | D7_:D7:    | S7_:S7:
+
+ C       | B2(B2a+B2b)  | 1191.795    | Data                           | C8D:C8:      | L8D:L8:       | D8D:D8:    | S8D:S8:
+ C       | B2(B2a+B2b)  | 1191.795    | Pilot                          | C8P:C8:      | L8P:L8:       | D8P:D8:    | S8P:S8:
+ C       | B2(B2a+B2b)  | 1191.795    | Data+Pilot                     | C8X:C8:      | L8X:L8:       | D8X:D8:    | S8X:S8:
+
+ C       | B3           | 1268.52     | I                              | C6I:C6:      | L6I:L6:       | D6I:D6:    | S6I:S6:
+ C       | B3           | 1268.52     | Q                              | C6Q:C6:      | L6Q:L6:       | D6Q:D6:    | S6Q:S6:
+ C       | B3           | 1268.52     | I+Q                            | C6X:C6:      | L6X:L6:       | D6X:D6:    | S6X:S6:
+ C       | B3           | 1268.52     | B3A                            | C6A:C6:      | L6A:L6:       | D6A:D6:    | S6A:S6:
+ C       | B3           | 1268.52     | unknown/RX2                    | C6_:C6:      | L6_:L6:       | D6_:D6:    | S6_:S6:
+
+
+ J       | L1           | 1575.42     | C/A                            | C1C:C1:      | L1C:L1:       | D1C:D1:    | S1C:S1:
+ J       | L1           | 1575.42     | L1C(D) (Data Ch.)              | C1S:C1:      | L1S:L1:       | D1S:D1:    | S1S:S1:
+ J       | L1           | 1575.42     | L1C(P) (Pilot Ch.)             | C1L:C1:      | L1L:L1:       | D1L:D1:    | S1L:S1:
+ J       | L1           | 1575.42     | L1C(D+P)                       | C1X:C1:      | L1X:L1:       | D1X:D1:    | S1X:S1:
+ J       | L1           | 1575.42     | L1-SAIF                        | C1Z:C1:      | L1Z:L1:       | D1Z:D1:    | S1Z:S1:
+ J       | L1           | 1575.42     | unknown/RX2                    | C1_:C1:      | L1_:L1:       | D1_:D1:    | S1_:S1:
+
+ J       | L2           | 1277.60     | L2C(M) (Data Ch.)              | C2S:C2:      | L2S:L2:       | D2S:D2:    | S2S:S2:
+ J       | L2           | 1277.60     | L2C(L) (No Data)               | C2L:C2:      | L2L:L2:       | D2L:D2:    | S2L:S2:
+ J       | L2           | 1277.60     | L2C(M+L)                       | C2X:C2:      | L2X:L2:       | D2X:D2:    | S2X:S2:
+ J       | L2           | 1277.60     | unknown/RX2                    | C2_:C2:      | L2_:L2:       | D2_:D2:    | S2_:S2:
+
+ J       | L5           | 1176.45     | I                              | C5I:C5:      | L5I:L5:       | D5I:D5:    | S5I:S5:
+ J       | L5           | 1176.45     | Q                              | C5Q:C5:      | L5Q:L5:       | D5Q:D5:    | S5Q:S5:
+ J       | L5           | 1176.45     | I+Q                            | C5X:C5:      | L5X:L5:       | D5X:D5:    | S5X:S5:
+ J       | L5           | 1176.45     | L5D                            | C5D:C5:      | L5D:L5:       | D5D:D5:    | S5D:S5:
+ J       | L5           | 1176.45     | L5P                            | C5P:C5:      | L5P:L5:       | D5P:D5:    | S5P:S5:
+ J       | L5           | 1176.45     | L5(D+P)                        | C5Z:C5:      | L5Z:L5:       | D5Z:D5:    | S5Z:S5:
+ J       | L5           | 1176.45     | unknown/RX2                    | C5_:C5:      | L5_:L5:       | D5_:D5:    | S5_:S5:
+
+ J       | LEX          | 1278.75     | S (Data Ch.)                   | C6S:C6:      | L6S:L6:       | D6S:D6:    | S6S:S6:
+ J       | LEX          | 1278.75     | L (No Data)                    | C6L:C6:      | L6L:L6:       | D6L:D6:    | S6L:S6:
+ J       | LEX          | 1278.75     | S+L                            | C6X:C6:      | L6X:L6:       | D6X:D6:    | S6X:S6:
+ J       | LEX          | 1278.75     | E                              | C6E:C6:      | L6E:L6:       | D6E:D6:    | S6E:S6:
+ J       | LEX          | 1278.75     | D+E                            | C6Z:C6:      | L6Z:L6:       | D6Z:D6:    | S6Z:S6:
+ J       | LEX          | 1278.75     | unknown/RX2                    | C6_:C6:      | L6_:L6:       | D6_:D6:    | S6_:S6:
+
+
+ I       | L5           | 1176.45     | A SPS                          | C5A:C5:      | L5A:L5:       | D5A:D5:    | S5A:S5:
+ I       | L5           | 1176.45     | B RS (D)                       | C5B:C5:      | L5B:L5:       | D5B:D5:    | S5B:S5:
+ I       | L5           | 1176.45     | C RS (P)                       | C5C:C5:      | L5C:L5:       | D5C:D5:    | S5C:S5:
+ I       | L5           | 1176.45     | B+C                            | C5X:C5:      | L5X:L5:       | D5X:D5:    | S5X:S5:
+ I       | L5           | 1176.45     | unknown/RX2                    | C5_:C5:      | L5_:L5:       | D5_:D5:    | S5_:S5:
+
+ I       | S            | 2492.028    | A SPS                          | C9A:C9:      | L9A:L9:       | D9A:D9:    | S9A:S9:
+ I       | S            | 2492.028    | B RS (D)                       | C9B:C9:      | L9B:L9:       | D9B:D9:    | S9B:S9:
+ I       | S            | 2492.028    | C RS (P)                       | C9C:C9:      | L9C:L9:       | D9C:D9:    | S9C:S9:
+ I       | S            | 2492.028    | B+C                            | C9X:C9:      | L9X:L9:       | D9X:D9:    | S9X:S9:
+ I       | S            | 2492.028    | unknown/RX2                    | C9_:C9:      | L9_:L9:       | D9_:D9:    | S9_:S9:
+
