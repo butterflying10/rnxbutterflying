@@ -7,8 +7,8 @@ class ReadObs:
     obsepochs=list()
     def __init__(self,name):
         self.filename=name
-        self.readobsfile()
-    def readobsfile(self):
+        self.__readobsfile()
+    def __readobsfile(self):
         ############读取头文件数据##########
         obstype_list=()
         with open(self.filename,'r+',encoding="utf-8") as f :

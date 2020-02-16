@@ -17,7 +17,7 @@ class ObsEpoch:
     D5=0
     S5=0
 
-    #观测值的标识符
+    #观测值的标识符,需要添加
     LLI=0
     Rssi=0
     def __init__(self):

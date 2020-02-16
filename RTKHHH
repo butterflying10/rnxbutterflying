@@ -1,0 +1,41 @@
+#define MAXFREQ     7                   /* max NFREQ */
+
+#define FREQ1       1.57542E9           /* L1/E1  frequency (Hz) */
+#define FREQ2       1.22760E9           /* L2     frequency (Hz) */
+#define FREQ5       1.17645E9           /* L5/E5a frequency (Hz) */
+#define FREQ6       1.27875E9           /* E6/LEX frequency (Hz) */
+#define FREQ7       1.20714E9           /* E5b    frequency (Hz) */
+#define FREQ8       1.191795E9          /* E5a+b  frequency (Hz) */
+#define FREQ1_GLO   1.60200E9           /* GLONASS G1 base frequency (Hz) */
+#define DFRQ1_GLO   0.56250E6           /* GLONASS G1 bias frequency (Hz/n) */
+#define FREQ2_GLO   1.24600E9           /* GLONASS G2 base frequency (Hz) */
+#define DFRQ2_GLO   0.43750E6           /* GLONASS G2 bias frequency (Hz/n) */
+#define FREQ3_GLO   1.202025E9          /* GLONASS G3 frequency (Hz) */
+#define FREQ1_CMP   1.561098E9          /* BeiDou B1 frequency (Hz) */
+#define FREQ2_CMP   1.20714E9           /* BeiDou B2 frequency (Hz) */
+#define FREQ3_CMP   1.26852E9           /* BeiDou B3 frequency (Hz) */
+
+#define EFACT_GPS   1.0                 /* error factor: GPS */
+#define EFACT_GLO   1.5                 /* error factor: GLONASS */
+#define EFACT_GAL   1.0                 /* error factor: Galileo */
+#define EFACT_QZS   1.0                 /* error factor: QZSS */
+#define EFACT_CMP   1.0                 /* error factor: BeiDou */
+#define EFACT_SBS   3.0                 /* error factor: SBAS */
+
+#define SYS_NONE    0x00                /* navigation system: none */
+#define SYS_GPS     0x01                /* navigation system: GPS */
+#define SYS_SBS     0x02                /* navigation system: SBAS */
+#define SYS_GLO     0x04                /* navigation system: GLONASS */
+#define SYS_GAL     0x08                /* navigation system: Galileo */
+#define SYS_QZS     0x10                /* navigation system: QZSS */
+#define SYS_CMP     0x20                /* navigation system: BeiDou */
+#define SYS_IRN     0x40                /* navigation system: IRNSS */
+#define SYS_LEO     0x80                /* navigation system: LEO */
+#define SYS_ALL     0xFF                /* navigation system: all */
+
+#define TSYS_GPS    0                   /* time system: GPS time */
+#define TSYS_UTC    1                   /* time system: UTC */
+#define TSYS_GLO    2                   /* time system: GLONASS time */
+#define TSYS_GAL    3                   /* time system: Galileo time */
+#define TSYS_QZS    4                   /* time system: QZSS time */
+#define TSYS_CMP    5                   /* time system: BeiDou time */

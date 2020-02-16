@@ -25,8 +25,8 @@ class Check_sum:
     def __init__(self,name):
         self.filename=name
         readobs=ReadObs.ReadObs(self.filename)
-        self.chk(readobs)
-        self.getSVGREC()
+        self.__chk(readobs)
+        self.__getSVGREC()
         self.output()
 
 
@@ -54,7 +54,7 @@ class Check_sum:
     def get_obsepochnum(self):
         return self.obsepochs_num
     
-    def chk(self,readobs):
+    def __chk(self,readobs):
         sv_list=[]#卫星列表
         times=[]
         station_data=readobs.get_station_data()
@@ -159,7 +159,7 @@ class Check_sum:
         except:
             print("检测出现异常")
     ###########获取各系统卫星号##########
-    def getSVGREC(self):
+    def __getSVGREC(self):
         svG=[]
         svR=[]
         svE=[]
